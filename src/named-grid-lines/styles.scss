@@ -2,15 +2,17 @@
   display: grid;
   grid-gap: 15px;
   grid-template-columns:
-    [left-sidebar-start] 20%
-    [main-start] 60%
-    [right-sidebar-start] 20%;
+    [left-sidebar-start] 2fr
+    [left-sidebar-end main-start] 6fr
+    [main-end right-sidebar-start] 2fr
+    [right-sidebar-end];
 
   grid-template-rows:
-    [body-start] 80%
-    [footer-start] 20%;
+    [body-start] 8fr
+    [body-end footer-start] 2fr
+    [footer-end];
   
-  margin: 20px;
+  padding: 20px;
   box-sizing: border-box;
   height: 100vh;
   color: white;
@@ -27,17 +29,9 @@
 
 
 .left-sidebar {
-  
-}
-
-.main {
-  
-}
-
-.right-sidebar {
-  grid-row: body-start / span 2;
+  grid-row: body-start / -1;
 }
 
 .footer {
-  grid-column: main-start / span 2
+  grid-column: main-start / right-sidebar-end
 }
