@@ -1,0 +1,43 @@
+section {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "header"
+    "main"
+    "aside-1"
+    "aside-2"
+    "footer";
+
+  height: 100vh;
+
+  @media (min-width: 700px) {
+    grid-template-areas:
+      "header header header"
+      "aside-1 main aside-2"
+      "footer footer footer";
+  }
+
+  & > * {
+    background-color: #94d5e0;
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside:nth-child(2){
+  grid-area: aside-1;
+}
+
+aside:nth-child(4){
+  grid-area: aside-2;
+}
+
+footer {
+  grid-area: footer;
+}
