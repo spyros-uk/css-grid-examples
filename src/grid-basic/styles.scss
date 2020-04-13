@@ -18,7 +18,11 @@ section {
   }
 
   & > * {
-    background-color: #94d5e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: goldenrod;
   }
 }
 

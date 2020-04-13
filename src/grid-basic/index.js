@@ -1,8 +1,9 @@
 import "./styles.scss"
 document.querySelector("#app").innerHTML = `
+<h1 class="title">CSS Grid</h1>
 <section>
   <header>
-    <h1 class="title">CSS Grid</h1>
+    Header
   </header>
   <aside>
     Aside 1
