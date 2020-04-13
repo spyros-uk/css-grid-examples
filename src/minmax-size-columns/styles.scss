@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+  grid-gap: 16px 24px;
+  grid-template-columns:
+    minmax(min-content, auto)
+    minmax(350px, auto)
+    minmax(350px, auto);
+  
+  margin: 20px;
+  height: 100vh;
+}
+
+
+.grid__item {
+  color: white;
+  background-color: goldenrod;
+}
