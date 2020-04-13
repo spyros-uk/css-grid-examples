@@ -1,7 +1,12 @@
 {
   "name": "css-grid-examples",
   "version": "1.0.0",
-  "description": "",
+  "description": "Examples of how to create grid layouts by using CSS grid",
+  "author": {
+    "name": "Spyros Papaioannou",
+    "email": "dev@spyros.uk",
+    "website": "https://www.spyros.uk"
+  },
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
@@ -10,7 +15,8 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.2.0",
-    "parcel-bundler": "^1.6.1"
+    "parcel-bundler": "^1.6.1",
+    "sass": "^1.26.3"
   },
-  "keywords": []
+  "keywords": ["css grid", "css grid examples", "css grid layout"]
 }

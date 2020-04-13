@@ -1,0 +1,9 @@
+.tmp
+.cache
+.DS_Store
+npm-debug.log*
+node_modules
+dist
+
+# IDE specific files
+.idea
