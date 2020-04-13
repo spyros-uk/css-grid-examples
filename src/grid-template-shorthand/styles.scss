@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template:
+    [header-top] "nav1 nav2 nav3" 1fr [header-bottom]
+    [main-top] "main main nav3" 5fr [main-bottom]
+    / 2fr 1fr 1fr;
+
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+
+.grid__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  color: white;
+  background-color: goldenrod;
+
+
+  &:nth-child(1) {
+    grid-area: nav1;
+  }
+
+  &:nth-child(2) {
+    grid-area: nav2;
+  }
+
+  &:nth-child(3){
+    grid-area: nav3;
+  }
+
+  &:nth-child(4) {
+    grid-area: main;
+  }
+}
