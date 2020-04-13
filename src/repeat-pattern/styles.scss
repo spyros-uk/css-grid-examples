@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid-gap: 16px 24px;
+  grid-template-columns:
+    [start]
+    repeat(10,
+      [small-start] minmax(100px, auto)
+      [small-end medium-start] minmax(150px, auto)
+      [medium-end max-start] minmax(200px, auto)
+      [max-end]
+    )
+    [end];
+  
+  margin: 20px;
+  height: 100vh;
+}
+
+
+.grid__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  color: white;
+  background-color: goldenrod;
+}
