@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid: 1fr 3fr / auto-flow 1fr 2fr;
+
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.grid__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  color: white;
+  background-color: goldenrod;
+}
